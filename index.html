@@ -1,1 +1,103 @@
-Hello World
+<html>
+  <head>
+    <title>Austin Martinez</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="uk-tile uk-tile-default">
+      <h1>Austin Martinez Portfolio</h1>
+    </div>
+    <div class="uk-panel">
+      <img class="uk-align-center uk-align-left@s uk-margin-remove-adjacent uk-container" src="img/me.jpg" width="240" height="165" alt="Example image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <hr class="uk-divider-icon">
+
+    <h2>Education</h2>
+    <div class="uk-text-left">
+     <div class="uk-dark uk-background-muted uk-padding">
+       <h3>CSUMB (B.S.) Computer Science (2019)</h3>
+       <img data-src="img/csumb.png" width="90" height="60" uk-img>
+       <ul class="uk-list uk-list-bullet">
+          <li>Concentration in Software Engineering</li>
+          <li>In-major GPA: 3.8; Dean’s List all semesters</li>
+          <li>Coursework: Advanced Machine Learning; Data Science; Multivariate Calculus; Mathematics in Computing; Computer Architecture; Discrete Mathematics; Algorithms; </li>
+        </ul>
+       <p>The Computer Science major provides students with an understanding of fundamental computer science concepts coupled with applied information technology skills. Students are prepared for careers in computing technology industries or for graduate program.</p>
+     </div>
+    </div>
+    <div class="uk-text-left">
+     <div class="uk-dark uk-background-muted uk-padding">
+       <h3>Udacity Full Stack Web Developer Nanodegree (2017)</h3>
+       <img data-src="img/udacity.png" width="90" height="60" uk-img>
+       <ul class="uk-list uk-list-bullet">
+          <li>Program has students build 4 complex server-side web applications that use powerful relational databases to persistently store data.</li>
+          <li>Applications developed in Linux using Python, Flask, MySql, Javascript, and Ajax.</li>
+          <li>Nanodegree program Co-created by Amazon Web Services, Github, AT&T, and Google. </li>
+        </ul>
+     </div>
+    </div>
+    <hr class="uk-divider-icon">
+
+    <h2>Work Experience</h2>
+    <div class="uk-text-left">
+     <div class="uk-dark uk-background-muted uk-padding">
+       <h3>Software Engineering Intern - LanguageLine Solutions (2018)</h3>
+       <img data-src="img/1.jpg" width="90" height="60" uk-img>
+       <p>I worked in a team to develop a solution that allowed salespeople to easily access relevant data replacing previous system that forced salespeople to login to multiple systems. The old system consisted of an ElasticSearch database and a Salesforce database. A sales person would have to log on to both systems and cross check account information by manually matching account IDs. The solution I developed was an Odata Client that allowed the ElasticSearch data to seamlessly appear in the Salesforce client. This solution saves employees hours a week by streamlining their work flows. I also developed an administration control system for the Odata Client allowing company admins to maintain and add functionality to the client.</p>
+     </div>
+    </div>
+    <hr class="uk-divider-icon">
+
+    <h2>Projects</h2>
+    <div class="uk-text-left">
+     <div class="uk-dark uk-background-muted uk-padding">
+       <h3>RetinaNet Object Detection on MBARI Station M Images (2019)</h3>
+       <img data-src="img/pigp.png" width="90" height="60" uk-img>
+       <img data-src="img/mbari.png" width="90" height="60" uk-img>
+       <ul class="uk-list uk-list-bullet">
+         <li>
+           Train RetinaNet neural network on cloud TPUs via GCP to assist MBARI researchers identify and track benthic life with Station M Images.
+         </li>
+         <li>
+           Develop Python and Bash scripts that establish pipeline to prepare and train MBARI’s Station M data on GCP, labeling 2000+ new images.
+         </li>
+         <li>
+           Document process and issues faced in working with RetinaNet and the cloud TPU architecture for future students or employees working with MBARI.
+         </li>
+       </ul>
+       <p><strong>Technology Used:</strong> Python3, Bash, Docker, Linux, GCP, Tensorflow</p>
+       <a href="https://github.com/AMartinez2/MBARI-RetinaNet-ODM">See Project</a>
+     </div>
+    </div>
+    <div class="uk-text-left">
+     <div class="uk-dark uk-background-muted uk-padding">
+       <h3>Audio Reactive Graphics Engine (2019) <span class="uk-label">In Progress</span></h3>
+       <ul class="uk-list uk-list-bullet">
+         <li>
+           Built in C++ and OpenGL/GLFW, engine extracts frequency data from audio which is used to alter physically based rendering parameters in real time.
+         </li>
+         <li>
+           Implements Fast Fourier Transformations making frequency data available to users.
+         </li>
+         <li>
+           Shaders allow for custom model loading and lighting parameters.
+         </li>
+       </ul>
+       <button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">V1 Demo</button>
+       <iframe width="1920" height="1080" src="https://www.youtube.com/embed/967pWoz0MPE?rel=0&amp;showinfo=0" frameborder="0" hidden allowfullscreen uk-responsive uk-video="automute: false" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p><strong>Technology Used:</strong> C++, OpenGL, GLSL, BASS, Assimp</p>
+      <a href="https://github.com/AMartinez2/Audio-Reactive-PBR-Render-Engine.git">See Project</a>
+     </div>
+    </div>
+    <a id="scrollTop" href="#" uk-totop uk-scroll></a>
+  </body>
+</html>
